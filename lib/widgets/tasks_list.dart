@@ -10,6 +10,7 @@ class TasksList extends StatelessWidget {
       builder: (context, taskData, child) {
         return ListView.builder(
           itemBuilder: (context, index) {
+            // factored code
             final task = taskData.tasks[index];
             return TaskTile(
               taskTitle: task.name,
